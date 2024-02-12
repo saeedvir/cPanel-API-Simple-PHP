@@ -164,7 +164,7 @@ class cPanelApi {
     
     }
     
-    public function getBandwidth($timezone) {
+    public function getBandwidth($timezone='Asia/Tehran') {
 
     $func = "https://$this->cPanelUrl:$this->cPanelPort/execute/Stats/get_bandwidth?timezone=$timezone";
     return $this->exe_cpanel($func);
